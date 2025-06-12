@@ -1,7 +1,7 @@
 -- Function to calculate the sum of a list using recursion
 sumList :: Num a => [a] -> a
 sumList []     = 0       -- Base case: empty list has a sum of 0
-sumList (x:xs) = x + sumList xs  -- Recursive case: add current element to the sum of the rest
+sumList (first:rest) = first + sumList rest  -- Recursive case: add current element to the sum of the rest
 
 main :: IO ()
 main = do
